@@ -1,0 +1,174 @@
+.content {
+	.container {
+		@extend %clearfix;
+	}
+}
+
+.sidebar {
+	width: 220px;
+	float: left;
+}
+
+
+.page-content {
+	width: 700px;
+	float: right;
+}
+
+.nav__link {
+	display: block;
+	padding: 10px 20px 10px 0;
+	text-align: right;
+	border-right: 5px solid transparent;
+
+	&:hover {
+		border-color: $blue;
+	}
+}
+//
+//.nav__link_heart {
+//	&:before {
+//		font-family: 'FontAwesome';
+//		content: "\f21e";
+//	}
+//}
+
+.nav__link-text {
+	display: inline-block;
+	padding: 4px 0 4px 20px;
+}
+
+.nav__link_heart {
+	.nav__link-text {
+		background: url('/img/icons/person.png') 0 center no-repeat;
+	}
+}
+
+/* --------- about --------- */
+
+.about {
+	@extend %clearfix;
+}
+
+.about__left {
+	width: 290px;
+	float: left;
+}
+
+.about__right {
+	width: 400px;
+	float: right;
+}
+
+
+.about__pic {
+	overflow: hidden;
+	border-radius: 50%;
+	border: 5px solid #fff;
+	display: inline-block;
+	width: 220px;
+	height: 220px;
+}
+
+.about__pic-img {
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.title {
+	font-size: 35px;
+	color: $black;
+	margin-bottom: 20px;
+}
+
+.about__desc {
+	p {
+		font-size: 18px;
+		color: #646464;
+		margin-top: 0;
+		margin-bottom: 15px;
+	}
+
+	h1 {
+
+	}
+
+	h2 {
+
+	}
+}
+
+/* --------- career --------- */
+
+.career__item {
+	text-align: right;
+	margin-bottom: 20px;
+
+	&:first-child {
+		.career__block {
+			&:before {
+				display: none;
+			}
+		}
+	}
+
+	&:last-child {
+		.career__block {
+			&::after {
+				display: none;
+			}
+		}
+	}
+}
+
+.career__block {
+	width: 300px;
+	border: 1px solid black;
+	display: inline-block;
+	position: relative;
+	text-align: left;
+
+	&:before, &:after {
+		content: "";
+		display: block;
+		width: 1px;
+		background: #dddddd;
+		position: absolute;
+		left: -30px;
+	}
+
+	&:before {
+		top: 0;
+		bottom: 50%;
+		margin-bottom: 10px;
+	}
+
+	&:after {
+		bottom: -22px;
+		top: 50%;
+		margin-top: 10px;
+	}
+}
+
+.career__year {
+	position: absolute;
+	right: 100%;
+	top: 50%;
+	line-height: 30px;
+	margin-top: -15px;
+	margin-right: 38px;
+
+	&:after {
+		content: "";
+		width: 10px;
+		height: 10px;
+		background: $blue;
+		border-radius: 50%;
+		position: absolute;
+		right: -14px;
+		top: 50%;
+		margin-top: -5px;
+		z-index: 1;
+	}
+}
