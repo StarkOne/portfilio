@@ -22,9 +22,15 @@
 	padding: 10px 20px 10px 0;
 	text-align: right;
 	border-right: 5px solid transparent;
+    text-decoration: none;
+    
+    &:visited{
+        color:#414141;
+    }
 
 	&:hover {
 		border-color: $blue;
+        color:$blue;
 	}
 }
 //
@@ -45,7 +51,15 @@
 		background: url('/img/icons/person.png') 0 center no-repeat;
 	}
 }
-
+.nav__item_active{
+    border-color: $blue;
+    .nav__link-span{
+        color:$blue;
+    }
+    .fa-university{
+        color:$blue;
+    }
+}
 /* --------- about --------- */
 
 .about {
@@ -124,11 +138,21 @@
 }
 
 .career__block {
-	width: 300px;
+    padding: 20px;
+	width: 330px;
 	border: 1px solid black;
 	display: inline-block;
 	position: relative;
 	text-align: left;
+    border-radius: 10px;
+    
+    &:hover{
+        background-color: $blue;
+        color:#fff;
+        .career__year{
+            color: #000;
+        }
+    }
 
 	&:before, &:after {
 		content: "";
@@ -158,7 +182,7 @@
 	top: 50%;
 	line-height: 30px;
 	margin-top: -15px;
-	margin-right: 38px;
+	margin-right: 45px;
 
 	&:after {
 		content: "";
@@ -167,19 +191,36 @@
 		background: $blue;
 		border-radius: 50%;
 		position: absolute;
-		right: -14px;
+		right: -20px;
 		top: 50%;
 		margin-top: -5px;
 		z-index: 1;
 	}
 }
-.career__item{
+.career__block{
     &:hover{
         .career__year {
             &:after{
-                border: 5px solid black;
-                left: 10px;
+                border: 5px solid #94e0f2;
+                right: -26px;
+                margin-top: -10px;
             }
         }
     } 
+}
+.about_h1{
+    font-size: 35px;
+    line-height: 45px;
+    padding: 0 0 10px 0;
+    margin: 0;
+}
+.career{
+    
+    .about__pic{
+        border-radius: 20px;
+        height: 100%;
+    }
+}
+.nav__link-span{
+    padding-left: 5px;
 }

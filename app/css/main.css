@@ -401,6 +401,8 @@ body, html {
   height: 100%; }
 
 body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-size: 16px;
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
@@ -412,7 +414,7 @@ body {
   min-width: 960px; }
 
 .maincontent {
-  padding-bottom: 50px; }
+  padding-bottom: 25px; }
 
 .container {
   width: 940px;
@@ -2664,7 +2666,10 @@ h1, h2, h3, h4, h5, h6 {
   vertical-align: middle;
   width: 50px;
   height: 50px;
-  background: #ccc; }
+  background: #ccc;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  margin-right: 10px; }
 
 .user__username {
   display: inline-block;
@@ -2682,9 +2687,13 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   padding: 10px 20px 10px 0;
   text-align: right;
-  border-right: 5px solid transparent; }
+  border-right: 5px solid transparent;
+  text-decoration: none; }
+  .nav__link:visited {
+    color: #414141; }
   .nav__link:hover {
-    border-color: #33c1e3; }
+    border-color: #33c1e3;
+    color: #33c1e3; }
 
 .nav__link-text {
   display: inline-block;
@@ -2692,6 +2701,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav__link_heart .nav__link-text {
   background: url("/img/icons/person.png") 0 center no-repeat; }
+
+.nav__item_active {
+  border-color: #33c1e3; }
+  .nav__item_active .nav__link-span {
+    color: #33c1e3; }
+  .nav__item_active .fa-university {
+    color: #33c1e3; }
 
 /* --------- about --------- */
 .about__left {
@@ -2737,11 +2753,19 @@ h1, h2, h3, h4, h5, h6 {
     display: none; }
 
 .career__block {
-  width: 300px;
+  padding: 20px;
+  width: 330px;
   border: 1px solid black;
   display: inline-block;
   position: relative;
-  text-align: left; }
+  text-align: left;
+  -webkit-border-radius: 10px;
+          border-radius: 10px; }
+  .career__block:hover {
+    background-color: #33c1e3;
+    color: #fff; }
+    .career__block:hover .career__year {
+      color: #000; }
   .career__block:before, .career__block:after {
     content: "";
     display: block;
@@ -2764,7 +2788,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 50%;
   line-height: 30px;
   margin-top: -15px;
-  margin-right: 38px; }
+  margin-right: 45px; }
   .career__year:after {
     content: "";
     width: 10px;
@@ -2773,14 +2797,29 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-border-radius: 50%;
             border-radius: 50%;
     position: absolute;
-    right: -14px;
+    right: -20px;
     top: 50%;
     margin-top: -5px;
     z-index: 1; }
 
-.career__item:hover .career__year:after {
-  border: 5px solid black;
-  left: 10px; }
+.career__block:hover .career__year:after {
+  border: 5px solid #94e0f2;
+  right: -26px;
+  margin-top: -10px; }
+
+.about_h1 {
+  font-size: 35px;
+  line-height: 45px;
+  padding: 0 0 10px 0;
+  margin: 0; }
+
+.career .about__pic {
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  height: 100%; }
+
+.nav__link-span {
+  padding-left: 5px; }
 
 footer {
   background: #414141;
