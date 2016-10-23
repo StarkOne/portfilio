@@ -4,6 +4,7 @@ $blue: #33c1e3;
 $black: #414141;
 
 // layout
+@import "sections/vars";
 @import "_misc/fonts";
 @import "_misc/mixins";
 @import "_misc/normalize";
@@ -14,4 +15,3 @@ $black: #414141;
 @import "sections/header";
 @import "sections/content";
 @import "sections/footer";
-

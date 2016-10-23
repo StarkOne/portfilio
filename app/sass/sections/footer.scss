@@ -1,5 +1,8 @@
+@import "_vars";
+
 footer {
 	background: #414141;
+    min-height: 50px;
 }
 
 .socials__link {
@@ -17,3 +20,9 @@ footer {
 		}
 	}
 } 
+.socials{
+    float: right;
+}
+.socials__item{
+    display: inline-block;
+}

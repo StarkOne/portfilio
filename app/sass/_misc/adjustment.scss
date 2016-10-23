@@ -16,19 +16,10 @@ body {
 }
 
 .wrapper {
-	min-height: 100%;
 	overflow: hidden;
 	position: relative;
 	min-width: $container-width + 20px;
 }
-
-.wrapper:after {
-	content: "";
-	display: block;
-	height: $footer-height;
-	overflow: hidden;
-}
-
 .maincontent {
 	padding-bottom: 50px;
 }
@@ -48,9 +39,7 @@ ul {
 }
 
 footer {
-	height: $footer-height;
 	width: 100%; 
-	margin-top: -$footer-height;
 	position: relative;
 	min-width: $container-width + 20px;
 }

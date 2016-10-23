@@ -22,7 +22,7 @@
   font-weight: normal;
   font-style: normal; }
 
-.header:after, .contacts:after, .content .container:after, .about:after {
+.header:after, .header .container:after, .contacts:after, .content .container:after, .about:after {
   content: "";
   display: block;
   clear: both; }
@@ -407,16 +407,9 @@ body {
   background: #f6f6f6; }
 
 .wrapper {
-  min-height: 100%;
   overflow: hidden;
   position: relative;
   min-width: 960px; }
-
-.wrapper:after {
-  content: "";
-  display: block;
-  height: 150px;
-  overflow: hidden; }
 
 .maincontent {
   padding-bottom: 50px; }
@@ -433,9 +426,7 @@ ul {
   margin: 0; }
 
 footer {
-  height: 150px;
   width: 100%;
-  margin-top: -150px;
   position: relative;
   min-width: 960px; }
 
@@ -2646,7 +2637,14 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
   font-family: 'fira_sansbold';
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  padding: 10px 0; }
+  .header .container {
+    width: 940px;
+    margin: 0 auto;
+    min-height: 50px;
+    line-height: 50px;
+    vertical-align: middle; }
 
 .header__left, .header__right {
   float: left;
@@ -2780,8 +2778,13 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: -5px;
     z-index: 1; }
 
+.career__item:hover .career__year:after {
+  border: 5px solid black;
+  left: 10px; }
+
 footer {
-  background: #414141; }
+  background: #414141;
+  min-height: 50px; }
 
 .socials__link {
   width: 32px;
@@ -2802,3 +2805,9 @@ footer {
   background: url("/img/icons/tw.png") 0 0 no-repeat; }
   .socials__link_tw:hover {
     background: url("/img/icons/tw.png") 0 0 no-repeat; }
+
+.socials {
+  float: right; }
+
+.socials__item {
+  display: inline-block; }

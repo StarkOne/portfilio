@@ -1,9 +1,20 @@
-.header {
+@import "_vars";
+
+.header{
 	background: #fff;
 	@include box-shadow(0 1px 3px 0 rgba(#000, .2));
 	@extend %clearfix;
 	@include fira(bold);
 	margin-bottom: 30px;
+    padding: 10px 0;
+        .container{
+            width: 940px;
+            margin: 0 auto;
+            min-height: 50px;
+            line-height: 50px;
+            vertical-align: middle;
+            @extend %clearfix;
+    }
 }
 
 .header__left, .header__right {
