@@ -2667,9 +2667,12 @@ h1, h2, h3, h4, h5, h6 {
   width: 50px;
   height: 50px;
   background: #ccc;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
   margin-right: 10px; }
+  .user__avatar .user__avatar-img {
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 50%;
+            border-radius: 50%; }
 
 .user__username {
   display: inline-block;
@@ -2690,6 +2693,8 @@ h1, h2, h3, h4, h5, h6 {
   border-right: 5px solid transparent;
   text-decoration: none; }
   .nav__link:visited {
+    color: #414141; }
+  .nav__link:link {
     color: #414141; }
   .nav__link:hover {
     border-color: #33c1e3;
@@ -2715,11 +2720,13 @@ h1, h2, h3, h4, h5, h6 {
 
 /* --------- about --------- */
 .about__left {
-  width: 290px;
-  float: left; }
+  width: 320px;
+  float: left;
+  max-height: 220px;
+  text-align: center; }
 
 .about__right {
-  width: 400px;
+  width: 380px;
   float: right; }
 
 .about__pic {
@@ -2730,11 +2737,10 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
   width: 220px;
   height: 220px; }
-
-.about__pic-img {
-  display: block;
-  max-width: 100%;
-  min-height: 220px; }
+  .about__pic .about__pic-img {
+    display: block;
+    max-width: 100%;
+    min-height: 220px; }
 
 .title {
   font-size: 35px;
@@ -2747,7 +2753,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 15px; }
 
-/* --------- career --------- */
 .career__item {
   text-align: right;
   margin-bottom: 20px; }
@@ -2827,6 +2832,18 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 18px;
   line-height: 24px; }
 
+.career .about__left {
+  width: 240px;
+  float: left;
+  border: none; }
+  .career .about__left .about__pic-img {
+    width: 220px;
+    height: 220px; }
+
+.career .about__right {
+  width: 400px;
+  float: right; }
+
 footer {
   background: #414141;
   min-height: 50px; }
@@ -2839,17 +2856,17 @@ footer {
 .socials__link_vk {
   background: url("/img/icons/vk.png") 0 0 no-repeat; }
   .socials__link_vk:hover {
-    background: url("/img/icons/vk.png") 0 0 no-repeat; }
+    background: url("/img/icons/vk-1.png") 0 0 no-repeat; }
 
 .socials__link_fb {
   background: url("/img/icons/fb.png") 0 0 no-repeat; }
   .socials__link_fb:hover {
-    background: url("/img/icons/fb.png") 0 0 no-repeat; }
+    background: url("/img/icons/fb-1.png") 0 0 no-repeat; }
 
 .socials__link_tw {
   background: url("/img/icons/tw.png") 0 0 no-repeat; }
   .socials__link_tw:hover {
-    background: url("/img/icons/tw.png") 0 0 no-repeat; }
+    background: url("/img/icons/tw-1.png") 0 0 no-repeat; }
 
 .socials {
   float: right; }
