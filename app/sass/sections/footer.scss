@@ -26,3 +26,18 @@ footer {
 .socials__item{
     display: inline-block;
 }
+.copyright{
+    line-height: 50px;
+    vertical-align: middle;
+    color: #fff;
+}
+.footer__left,
+.footer__right{
+    display: inline-block;
+}
+.footer__right{
+    float: right;
+    .socials{
+        padding: 10px 0 0 0;
+    }
+}

@@ -2708,6 +2708,10 @@ h1, h2, h3, h4, h5, h6 {
     color: #33c1e3; }
   .nav__item_active .fa-university {
     color: #33c1e3; }
+  .nav__item_active .fa-user {
+    color: #33c1e3; }
+  .nav__item_active .fa-file {
+    color: #33c1e3; }
 
 /* --------- about --------- */
 .about__left {
@@ -2730,7 +2734,7 @@ h1, h2, h3, h4, h5, h6 {
 .about__pic-img {
   display: block;
   max-width: 100%;
-  max-height: 100%; }
+  min-height: 220px; }
 
 .title {
   font-size: 35px;
@@ -2809,9 +2813,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .about_h1 {
   font-size: 35px;
-  line-height: 45px;
-  padding: 0 0 10px 0;
-  margin: 0; }
+  line-height: 1.286;
+  padding: 0 0 15px 0;
+  margin: -5px 0px; }
 
 .career .about__pic {
   -webkit-border-radius: 20px;
@@ -2819,7 +2823,9 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%; }
 
 .nav__link-span {
-  padding-left: 5px; }
+  padding-left: 5px;
+  font-size: 18px;
+  line-height: 24px; }
 
 footer {
   background: #414141;
@@ -2850,3 +2856,17 @@ footer {
 
 .socials__item {
   display: inline-block; }
+
+.copyright {
+  line-height: 50px;
+  vertical-align: middle;
+  color: #fff; }
+
+.footer__left,
+.footer__right {
+  display: inline-block; }
+
+.footer__right {
+  float: right; }
+  .footer__right .socials {
+    padding: 10px 0 0 0; }
