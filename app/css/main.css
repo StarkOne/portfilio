@@ -22,7 +22,7 @@
   font-weight: normal;
   font-style: normal; }
 
-.header:after, .header .container:after, .contacts:after, .content .container:after, .about:after {
+.header:after, .header .container:after, .contacts:after, .content .container:after, .about:after, .portfolio:after {
   content: "";
   display: block;
   clear: both; }
@@ -2843,6 +2843,37 @@ h1, h2, h3, h4, h5, h6 {
 .career .about__right {
   width: 400px;
   float: right; }
+
+.portfolio-main {
+  width: 700px;
+  float: right; }
+
+.portfolio-block {
+  width: 220px;
+  height: 285px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  -webkit-box-shadow: 0 2px 1px 0 #bbb;
+          box-shadow: 0 2px 1px 0 #bbb; }
+
+.portfolio-img {
+  max-height: 172px;
+  width: 220px; }
+
+.portfolio__img-website {
+  -webkit-border-top-left-radius: 10px;
+          border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+          border-top-right-radius: 10px;
+  height: 172px;
+  width: 220px; }
+
+.portfolio__text {
+  padding: 10px 20px; }
+
+.portfolio__name {
+  font-size: 21px;
+  line-height: 24px; }
 
 footer {
   background: #414141;

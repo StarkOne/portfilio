@@ -1,0 +1,30 @@
+.portfolio {
+	@extend %clearfix;
+}
+.portfolio-main{
+    width: 700px;
+    float: right;
+}
+.portfolio-block{
+    width: 220px;
+    height: 285px;
+    border-radius: 10px;
+    box-shadow: 0 2px 1px 0 #bbb;
+}
+.portfolio-img{
+    max-height: 172px;
+    width: 220px;
+}
+.portfolio__img-website{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 172px;
+    width: 220px;
+}
+.portfolio__text{
+    padding: 10px 20px;
+}
+.portfolio__name{
+    font-size: 21px;
+    line-height: 24px;
+}
