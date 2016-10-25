@@ -2753,6 +2753,29 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 15px; }
 
+.about__btns {
+  float: right;
+  margin-top: 25px; }
+
+.btn {
+  text-decoration: none;
+  border: 1px solid #e85f61;
+  display: block;
+  padding: 5px 15px 5px 15px;
+  text-align: right;
+  font-size: 14px;
+  line-height: 28px;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  margin-bottom: 48px;
+  color: #e85f61; }
+  .btn:hover {
+    background-color: #e85f61;
+    color: #fff; }
+
+.btn__text {
+  margin-left: 7px; }
+
 .career__item {
   text-align: right;
   margin-bottom: 20px; }
@@ -2764,7 +2787,7 @@ h1, h2, h3, h4, h5, h6 {
 .career__block {
   padding: 20px;
   width: 330px;
-  border: 1px solid black;
+  border: 1px solid #dddddd;
   display: inline-block;
   position: relative;
   text-align: left;
@@ -2849,6 +2872,7 @@ h1, h2, h3, h4, h5, h6 {
   float: right; }
 
 .portfolio-block {
+  display: inline-block;
   width: 220px;
   height: 285px;
   -webkit-border-radius: 10px;
@@ -2874,6 +2898,31 @@ h1, h2, h3, h4, h5, h6 {
 .portfolio__name {
   font-size: 21px;
   line-height: 24px; }
+
+.portfolio__platform {
+  font-size: 14px;
+  line-height: 24px;
+  padding: 5px 0; }
+  .portfolio__platform .portfolio__platform-text {
+    margin-left: 5px; }
+
+.portfolio__description {
+  font-size: 14px;
+  line-height: 24px; }
+
+.portfolio__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .portfolio__list .portfolio-item {
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 20px; }
+    .portfolio__list .portfolio-item:nth-child(3n) {
+      margin-right: 0; }
+    .portfolio__list .portfolio-item:hover .portfolio-block {
+      -webkit-box-shadow: 2px 3px 3px 0 #bbb;
+              box-shadow: 2px 3px 3px 0 #bbb; }
 
 footer {
   background: #414141;

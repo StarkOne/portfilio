@@ -6,6 +6,7 @@
     float: right;
 }
 .portfolio-block{
+    display: inline-block;
     width: 220px;
     height: 285px;
     border-radius: 10px;
@@ -27,4 +28,34 @@
 .portfolio__name{
     font-size: 21px;
     line-height: 24px;
+}
+.portfolio__platform{
+    font-size: 14px;
+    line-height: 24px;
+    padding: 5px 0;
+    .portfolio__platform-text{
+        margin-left: 5px;
+    }
+}
+.portfolio__description{
+    font-size: 14px;
+    line-height: 24px;
+}
+.portfolio__list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    .portfolio-item{
+        display: inline-block;
+        margin-right: 15px;
+        margin-bottom: 20px;
+        &:nth-child(3n){
+            margin-right: 0;
+        }
+        &:hover{
+            .portfolio-block{
+                box-shadow: 2px 3px 3px 0 #bbb;
+            }
+        }
+    }
 }
