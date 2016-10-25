@@ -2661,6 +2661,16 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 18px;
   background: url("/img/decor/dot.png") 0 bottom repeat-x; }
 
+.contacts {
+  position: relative;
+  display: inline-block; }
+  .contacts:hover .contacts__dropdown {
+    display: block; }
+  .contacts .fa {
+    font-size: 18px; }
+    .contacts .fa:before {
+      color: #33c1e3; }
+
 .user__avatar {
   display: inline-block;
   vertical-align: middle;
@@ -2677,6 +2687,32 @@ h1, h2, h3, h4, h5, h6 {
 .user__username {
   display: inline-block;
   vertical-align: middle; }
+
+.contacts__dropdown {
+  display: none;
+  position: absolute;
+  min-height: 140px;
+  min-width: 220px;
+  left: -50px;
+  top: 50px;
+  border: 1px solid #bbb;
+  background-color: #f6f6f6;
+  margin: 0;
+  padding: 0;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  text-align: left;
+  color: #414141; }
+
+.contacts__dropdown-item {
+  padding: 5px 15px 5px 20px;
+  line-height: 28px;
+  font-size: 14px;
+  font-weight: normal;
+  margin-bottom: 10px; }
+
+.contacts__dropdown-item-text {
+  padding-left: 10px; }
 
 .sidebar {
   width: 220px;
