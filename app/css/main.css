@@ -444,8 +444,8 @@ h1, h2, h3, h4, h5, h6 {
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("/fonts/fontawesome-webfont.eot?v=4.6.3");
-  src: url("/fonts/fontawesome-webfont.eot?#iefix&v=4.6.3") format("embedded-opentype"), url("/fonts/fontawesome-webfont.woff2?v=4.6.3") format("woff2"), url("/fonts/fontawesome-webfont.woff?v=4.6.3") format("woff"), url("/fonts/fontawesome-webfont.ttf?v=4.6.3") format("truetype"), url("/fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular") format("svg");
+  src: url("../fonts/fontawesome-webfont.eot?v=4.6.3");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.6.3") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.6.3") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.6.3") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.6.3") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -2659,7 +2659,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #33c1e3;
   text-decoration: none;
   font-size: 18px;
-  background: url("/img/decor/dot.png") 0 bottom repeat-x; }
+  background: url("../img/decor/dot.png") 0 bottom repeat-x; }
 
 .contacts {
   position: relative;
@@ -2676,7 +2676,6 @@ h1, h2, h3, h4, h5, h6 {
   vertical-align: middle;
   width: 50px;
   height: 50px;
-  background: #ccc;
   margin-right: 10px; }
   .user__avatar .user__avatar-img {
     width: 50px;
@@ -2741,7 +2740,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 4px 0 4px 20px; }
 
 .nav__link_heart .nav__link-text {
-  background: url("/img/icons/person.png") 0 center no-repeat; }
+  background: url("../img/icons/person.png") 0 center no-repeat; }
 
 .nav__item_active {
   border-color: #33c1e3; }
@@ -2970,19 +2969,19 @@ footer {
   display: block; }
 
 .socials__link_vk {
-  background: url("/img/icons/vk.png") 0 0 no-repeat; }
+  background: url("../img/icons/vk.png") 0 0 no-repeat; }
   .socials__link_vk:hover {
-    background: url("/img/icons/vk-1.png") 0 0 no-repeat; }
+    background: url("../img/icons/vk-1.png") 0 0 no-repeat; }
 
 .socials__link_fb {
-  background: url("/img/icons/fb.png") 0 0 no-repeat; }
+  background: url("../img/icons/fb.png") 0 0 no-repeat; }
   .socials__link_fb:hover {
-    background: url("/img/icons/fb-1.png") 0 0 no-repeat; }
+    background: url("../img/icons/fb-1.png") 0 0 no-repeat; }
 
 .socials__link_tw {
-  background: url("/img/icons/tw.png") 0 0 no-repeat; }
+  background: url("../img/icons/tw.png") 0 0 no-repeat; }
   .socials__link_tw:hover {
-    background: url("/img/icons/tw-1.png") 0 0 no-repeat; }
+    background: url("../img/icons/tw-1.png") 0 0 no-repeat; }
 
 .socials {
   float: right; }

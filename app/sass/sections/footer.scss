@@ -13,10 +13,10 @@ footer {
 
 @each $social in (vk, fb, tw) {
 	.socials__link_#{$social} {
-		background: url('/img/icons/#{$social}.png') 0 0 no-repeat;
+		background: url('../img/icons/#{$social}.png') 0 0 no-repeat;
 		
 		&:hover {
-			background: url('/img/icons/#{$social}-1.png') 0 0 no-repeat;
+			background: url('../img/icons/#{$social}-1.png') 0 0 no-repeat;
 		}
 	}
 } 
