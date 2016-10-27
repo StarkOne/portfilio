@@ -409,12 +409,14 @@ body {
   background: #f6f6f6; }
 
 .wrapper {
+  min-height: -webkit-calc(100vh - 50px);
+  min-height: calc(100vh - 50px);
   overflow: hidden;
   position: relative;
   min-width: 960px; }
 
 .maincontent {
-  padding-bottom: 25px; }
+  padding-bottom: 50px; }
 
 .container {
   width: 940px;
@@ -2701,7 +2703,8 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-border-radius: 10px;
           border-radius: 10px;
   text-align: left;
-  color: #414141; }
+  color: #414141;
+  z-index: 1; }
 
 .contacts__dropdown-item {
   padding: 5px 15px 5px 20px;
