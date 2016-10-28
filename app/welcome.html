@@ -1,25 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Документ</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
 	<meta name="viewport" content="width=960">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/adjustment.css">
 	
+	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/main.css">
-		
-	<script src="js/modernizr.js"></script>
 </head>
-<body>
+<body class="index">
+	<!--[if lt IE 9]>
+		<h1>Я виден только в ИЕ 8 и меньше</h1>
+	<![endif]-->
 	
-	<a href="#" class="btn btn_white">
-		<span class="btn__text">
-			Скачать резюме
-		</span> 
-	</a>
+	<div class="wrapper">
+		<div class="maincontent">
 
+			<!-- / ========= header ========= \ -->
+			<header class="header">
+				<div class="container clearfix">
+					<div class="header__left">
+
+						<!-- / ========= user ========= \ -->
+						<div class="user">
+							<div class="user__avatar"><img src="img/1.jpg" class="user__avatar-img" alt="I"></div>
+							<div class="user__username">
+								Владислав Семьянов
+							</div>
+						</div>
+					
+					</div>
+					<div class="header__right">
+
+						<!-- / ========= contacts ========= \ -->
+						<div class="contacts">
+							<a href="#" class="contacts__link">Мои контакты</a>
+							<ul class="contacts__dropdown">
+								<li class="contacts__dropdown-item"><i class="fa fa-envelope" aria-hidden="true"></i><span class="contacts__dropdown-item-text">Stark.pro40@gmail.com</span></li>
+								<li class="contacts__dropdown-item"><i class="fa fa-phone" aria-hidden="true"></i><span class="contacts__dropdown-item-text">+7 999 450 1375</span></li>
+								<li class="contacts__dropdown-item"><i class="fa fa-skype" aria-hidden="true"></i><span class="contacts__dropdown-item-text">Vlad_xxxxxx</span></li>
+							</ul>
+						</div>
+
+					</div>
+				</div>				
+			</header>
+			<div class="content">
+				<div class="container">
+
+					<!--/--------- sidebar ---------\-->
+					<aside class="sidebar">
+						<nav class="nav">
+							<ul class="nav__list">
+								<li class="nav__item ">
+									<a href="welcome.html" class="nav__link nav__item_active">
+										<i class="fa fa-user" aria-hidden="true"></i>
+											<span class="nav__link-span">
+											Обо мне
+								            </span>
+									</a>
+								</li>
+								<li class="nav__item ">
+									<a href="career.html" class="nav__link">
+									    <i class="fa fa-university" aria-hidden="true"></i>
+									    <span class="nav__link-span">
+										Обучение
+										</span>
+									</a>
+								</li>
+								<li class="nav__item">
+									<a href="portfolio.html" class="nav__link">
+                                        <i class="fa fa-file" aria-hidden="true"></i>
+									    <span class="nav__link-span">
+										Портфолио
+										</span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</aside>
+					
+					<!--/--------- page-content ---------\-->
+					<main class="page-content">
+						<div class="about">
+							<div class="about__left">
+								<div class="about__pic">
+									<img src="img/1.jpg" alt="" class="about__pic-img">
+								</div>
+							</div>
+							<div class="about__right">
+								<h1 class="title">
+									Обо мне
+								</h1>
+								<div class="about__desc">
+									<p>
+										Меня зовут Владислав. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic minus molestiae suscipit expedita quisquam quaerat!
+									</p>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, velit rem ut nulla molestiae architecto tenetur quas debitis cupiditate, repellendus molestias, minus nam alias, ex sunt nemo. Provident, sunt, vel?
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores non repudiandae illo molestiae laboriosam voluptates, optio quidem nesciunt, quos quia minus. Culpa error, fugit dicta tenetur sequi, veniam. Fuga, deserunt!
+									</p>
+								</div>
+								<div class="about__btns">
+									<a href="#" class="btn">
+										<i class="fa fa-file" aria-hidden="true"></i>
+										<span class="btn__text">
+											Скачать резюме
+										</span> 
+									</a>
+								</div>
+							</div>
+						</div>
+					</main>
+				</div>
+			</div>
+		</div>	
+	</div>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__left">
+				<div class="copyright">
+					© Владислав Семьянов
+				</div>
+			</div>
+			<div class="footer__right">
+				<ul class="socials">
+					<li class="socials__item">
+						<a href="https://vk.com/enokinpro" class="socials__link socials__link_vk">
+							
+						</a>
+					</li>
+					<li class="socials__item">
+						<a href="#" class="socials__link socials__link_fb">
+							
+						</a>
+					</li>
+					<li class="socials__item">
+						<a href="#" class="socials__link socials__link_tw">
+							
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+	<!-- scripts -->
 	
 </body>
 </html>
